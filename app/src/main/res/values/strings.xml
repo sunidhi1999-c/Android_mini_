@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Shakti</string>
+    <string name="register">Register</string>
+    <string name="register_your_mobile_number">Register Your Mobile Number</string>
+    <string name="name">Name:</string>
+    <string name="number">Number:</string>
+    <string name="save">Save</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="person_name">Person Name</string>
+    <string name="instructions">Instructions</string>
+    <string name="view_registered">View Registered</string>
+    <string name="shake_your_phone_to_test">Shake your phone to TEST.</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="help">Please follow the below steps to setup your account: <br/><br/><br/> 1. Register Your Phone Number.<br/> 2. Register Your Guardian Numbers.<br/> 3. Always maintain working internet connection.<br/> 4. SHAKE your phone in case of emergency to alert your guardians.<br/> <br/>LETS START NOW!</string>
+    <string name="submit">Submit</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="action_settings">Settings</string>
+</resources>
