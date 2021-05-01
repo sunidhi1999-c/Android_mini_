@@ -34,7 +34,6 @@ public class Verify extends AppCompatActivity {
         // showing the back button in action bar
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        setupActionBar();
     }
 
     public void verify_no(View v){
@@ -48,32 +47,15 @@ public class Verify extends AppCompatActivity {
         db.execSQL("INSERT INTO source VALUES('"+str_source_no+"');");
         Toast.makeText(getApplicationContext(), str_source_no+" Successfully Saved", Toast.LENGTH_SHORT).show();
         db.close();
-        back(v);
+
     }
 
-
-
-    /**
-     * Set up the {@link android.app.ActionBar}, if the API is available.
-     */
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-    private void setupActionBar(){
-        if(Build.VERSION_CODES.HONEYCOMB <= Build.VERSION.SDK_INT){
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.verify, menu);
         return true;
-    }
-
-    public void back(View v) {
-        Intent i_back=new Intent(Verify.this,MainActivity.class);
-        startActivity(i_back);
-
     }
 
     @Override

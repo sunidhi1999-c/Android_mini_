@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,10 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shakti">
-        <activity android:name=".Verify"></activity>
-        <activity android:name=".Instructions" />
-        <activity android:name=".Display" />
-        <activity android:name=".Register" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +23,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Display" />
+        <service android:name=".BgService"/>
+        <activity android:name=".Instructions" />
+        <activity android:name=".Verify"/>
+
+
+
     </application>
 
 </manifest>

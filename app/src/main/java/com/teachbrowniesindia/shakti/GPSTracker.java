@@ -18,6 +18,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 
+import static androidx.core.app.ActivityCompat.requestPermissions;
+
 
 public class GPSTracker extends Service implements LocationListener {
 

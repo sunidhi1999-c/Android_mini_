@@ -59,7 +59,7 @@ public class Display extends AppCompatActivity {
             startActivity(i_startservice);
 
         }catch (Exception e){
-            Toast.makeText(this, "DB not responding", Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
         }
     }
 

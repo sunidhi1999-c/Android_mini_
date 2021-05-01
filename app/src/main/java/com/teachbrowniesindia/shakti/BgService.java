@@ -74,7 +74,7 @@ public class BgService extends Service implements AccelerometerListener {
         @Override
         public void handleMessage(@NonNull Message msg) {
 
-            Toast.makeText(getApplicationContext(), "geoCoderHandler Started", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "geolocation Started", Toast.LENGTH_LONG).show();
 
             switch (msg.what){
                 case 1:
